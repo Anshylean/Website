@@ -1,0 +1,11 @@
+{
+  // Name of your Cloudflare Worker (shown in the dashboard)
+  "name": "website",
+
+  // Entry point — must match the filename in this repo
+  "main": "worker.js",
+
+  // Sets the baseline Workers runtime behaviour.
+  // Update this date to opt in to newer compatibility flags.
+  "compatibility_date": "2025-01-01"
+}
