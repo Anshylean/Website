@@ -1,6 +1,6 @@
 {
   // Name of your Cloudflare Worker (shown in the dashboard)
-  "name": "little-pine-c091",
+  "name": "demo",
 
   // Entry point — must match the filename in this repo
   "main": "worker.js",
