@@ -1,6 +1,4 @@
-export default {
-  async fetch(request, env, ctx) {
-    const html = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -45,14 +43,14 @@ a { color: inherit; text-decoration: none; }
 
 ::selection { background: var(--accent); color: #fff; }
 
-/* Layout */
+/* ── Layout ── */
 .wrap {
   max-width: var(--w);
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
 
-/* Navigation */
+/* ── Navigation ── */
 #nav {
   position: fixed;
   inset: 0 0 auto;
@@ -95,7 +93,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav-menu a:hover { color: var(--ink); }
 
-/* Hero */
+/* ── Hero ── */
 #home {
   min-height: 100svh;
   display: grid;
@@ -180,7 +178,7 @@ a { color: inherit; text-decoration: none; }
   100% { transform: translateX(100%); }
 }
 
-/* Sections */
+/* ── Sections ── */
 .section {
   padding: clamp(3.5rem, 10vw, 6rem) 0;
   border-top: 1px solid var(--rule);
@@ -210,7 +208,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1;
 }
 
-/* About */
+/* ── About ── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 230px;
@@ -277,7 +275,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 
-/* Work */
+/* ── Work ── */
 .work-list { list-style: none; }
 
 .work-item {
@@ -331,7 +329,7 @@ a { color: inherit; text-decoration: none; }
 
 .work-item:hover .work-name { color: var(--accent); }
 
-/* Writing */
+/* ── Writing ── */
 .writing-lead {
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
@@ -400,7 +398,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.55;
 }
 
-/* Contact */
+/* ── Contact ── */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -439,7 +437,7 @@ a { color: inherit; text-decoration: none; }
 
 .contact-list a:hover .cl-detail { color: inherit; }
 
-/* Footer */
+/* ── Footer ── */
 footer {
   border-top: 1px solid var(--rule);
   padding: 2rem 0;
@@ -453,7 +451,7 @@ footer {
   color: var(--muted);
 }
 
-/* Reveal */
+/* ── Reveal ── */
 .reveal {
   opacity: 0;
   transform: translateY(14px);
@@ -469,7 +467,7 @@ footer {
 .reveal[data-delay="2"] { transition-delay: 0.2s; }
 .reveal[data-delay="3"] { transition-delay: 0.3s; }
 
-/* Mobile */
+/* ── Mobile ── */
 @media (max-width: 660px) {
   .nav-menu { display: none; }
 
@@ -715,12 +713,4 @@ footer {
   document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
 </script>
 </body>
-</html>`;
-
-    return new Response(html, {
-      headers: {
-        "content-type": "text/html;charset=UTF-8",
-      },
-    });
-  },
-};
+</html>
