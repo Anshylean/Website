@@ -7,5 +7,7 @@
 
   // Sets the baseline Workers runtime behaviour.
   // Update this date to opt in to newer compatibility flags.
-  "compatibility_date": "2026-04-15"
+  "compatibility_date": "2026-04-15",
+
+  "assets": { "directory": "." }
 }

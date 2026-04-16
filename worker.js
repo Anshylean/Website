@@ -218,6 +218,14 @@ a { color: inherit; text-decoration: none; }
   align-items: start;
 }
 
+.about-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
 .bio p {
   font-size: 1.0625rem;
   font-weight: 300;
@@ -529,6 +537,7 @@ footer {
         <p>I believe the best thinking happens slowly, in the margins, away from urgency. This site is an attempt to make some of that visible.</p>
       </div>
       <aside class="about-aside reveal" data-delay="2">
+        <img src="src/4.jpg" alt="" class="about-photo">
         <div class="aside-block">
           <p class="aside-label">Find me</p>
           <ul class="aside-links">
